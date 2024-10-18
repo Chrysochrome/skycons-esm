@@ -1,0 +1,27 @@
+name: Build and Upload to Github Packages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-upload:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Bun & Build Project
+      uses: oven-sh/setup-bun@v2
+      with:
+        bun-version: latest
+        registry-url: "https://npm.pkg.github.com/"
+    - run: bun install
+    - run: bun run build
+
+    - name: Publish to GitHub Packages
+      run: bun publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
