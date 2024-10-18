@@ -12,7 +12,7 @@ lightweight, so they shouldn't rain on your parade:
     <canvas id="icon2" width="128" height="128"></canvas>
 
     <script type='module'>
-      import Skycons from 'skycons-esm';
+      import { Skycons } from 'skycons-esm';
 
       var skycons = new Skycons({"color": "pink"});
       // on Android, a nasty hack is needed: {"resizeClear": true}
