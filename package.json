@@ -1,5 +1,5 @@
 {
-  "name": "skycons-esm",
+  "name": "@chrysochrome/skycons-esm",
   "type": "module",
   "version": "0.0.1",
   "main": "dist/skycons-esm.min.js",
