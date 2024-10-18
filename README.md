@@ -13,6 +13,8 @@ lightweight, so they shouldn't rain on your parade:
 
     <script type='module'>
       import { Skycons } from 'skycons-esm';
+      // or from CDN
+      // import { Skycons } from "https://cdn.jsdelivr.net/npm/skycons-esm@latest/dist/skycons-esm.js";
 
       var skycons = new Skycons({"color": "pink"});
       // on Android, a nasty hack is needed: {"resizeClear": true}

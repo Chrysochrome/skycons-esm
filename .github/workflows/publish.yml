@@ -1,4 +1,4 @@
-name: Build and Upload to Github Packages
+name: Build and Upload to NPM Packages
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
     - run: bun install
     - run: bun run build
 
-    - name: Publish to GitHub Packages
+    - name: Publish to NPM Packages
       run: bun publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}

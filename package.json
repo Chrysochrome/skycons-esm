@@ -1,14 +1,14 @@
 {
   "name": "skycons-esm",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "main": "dist/skycons-esm.min.js",
   "module": "dist/skycons-esm.js",
-  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/skycons-esm.js",
-      "require": "./dist/skycons-esm.cjs.js"
+      "require": "./dist/skycons-esm.cjs.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
