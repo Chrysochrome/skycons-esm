@@ -1,0 +1,27 @@
+{
+  "name": "skycons-esm",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "dist/skycons-esm.min.js",
+  "module": "dist/skycons-esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/skycons-esm.js",
+      "require": "./dist/skycons-esm.cjs.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun ./build.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-plugin-dts": "^0.3.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
